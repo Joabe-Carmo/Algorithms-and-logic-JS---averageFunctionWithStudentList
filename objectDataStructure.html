@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const patients = [
+    {
+      nome: 'Joabe',
+      idade: 35,
+      peso: 60.5,
+      altura: 1.80
+    },
+    {
+      nome: 'Tiago',
+      idade: 32,
+      peso: 70.5,
+      altura: 1.81
+    }
+  ]
+
+  let patientsNames = []
+  let patientsAge = []
+  let patientsWeight = []
+  let patientsHeight = []
+
+  for(let patient of patients){
+    patientsNames.push(patient.nome)
+    patientsAge.push(patient.idade)
+    patientsWeight.push(patient.peso)
+    patientsHeight.push(patient.altura)
+    alert(`${patientsNames} tem ${patient.idade}, pesa ${patient.peso} e mede ${patient.altura}`)
+  }
+
+  </script>
+</body>
+</html>

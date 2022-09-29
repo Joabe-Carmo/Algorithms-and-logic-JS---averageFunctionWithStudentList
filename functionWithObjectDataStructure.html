@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const patients = [
+    {
+      name: 'Joabe',
+      age: 35,
+      weight: 74.2,
+      height: 1.80
+    },
+    {
+      name: 'Tiago',
+      age: 32,
+      weight: 79.5,
+      height: 1.81
+    },
+  ]
+
+
+
+  /* patientsList = []
+
+  for(let index = 0; index < patients.length; index++){
+    patientsList[index] = patients[index].name
+  }
+  alert(patientsList) */
+
+  function imc(patient){
+    return `Paciente ${patient.nome} possui o IMC de
+    ${(patient.weight / patient.height ** 2).toFixed}`
+  }
+  alert(imc(patient[0]))
+
+/*   let imc;  
+
+  for(let index = 0; index < patients.length; index++){
+    alert(`Paciente ${patients[index].name} possui o IMC de 
+    ${(patients[index].weight / patients[index].height ** 2).toFixed(2)}`)
+} */
+
+
+/* function imc (patient){
+  alert(`Paciente ${patient.name} possui o IMC de 
+    ${(patient.weight / ((patient.height / 100) ** 2)).toFixed(2)}`)
+}
+
+function printIMC(patients){
+  alert(`Paciente ${patients.name}`)
+}
+
+
+
+imc(patients[0])
+imc(patients[1]) */
+</script>
+</body>
+</html>

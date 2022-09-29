@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guessing game</title>
+</head>
+<body>
+  <script>
+    /* -----------------------Guessing game-------------------------- 
+    - Template literals  
+    - Tamplate Strings
+    - interpolation
+    - Function Match
+    - Function Random
+    - While loop structure 
+    - Typecasting */
+
+    let result = Number(prompt('Advinhe um número de 1 a 10'))
+
+    const randonNumber = Math.round(Math.random()*10)
+
+    xAttempts = 1
+    while(result != randonNumber){
+      result = prompt('tente novamente')
+      xAttempts++
+    }
+    alert(`Congratulations! You got the number right in ${xAttempts} attempts`)
+  </script>
+</body>
+</html>

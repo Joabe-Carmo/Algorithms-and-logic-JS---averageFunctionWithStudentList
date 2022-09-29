@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const students = [
+      {
+        name: 'Joabe',
+        note1: 9.9,
+        note2: 9.8
+      },
+      {
+        name: 'Tiago',
+        note1: 9.7,
+        note2: 0
+      }
+    ]
+
+    function average(student){
+      let average = ((student.note1 + student.note2) / 2).toFixed(2)
+      if(average >= 7){
+        return `A média do aluno(a) ${student.name} é ${average} Paranéns, ${student.name}! 
+Você foi aprovado no concurso` 
+      }else{
+        return `A média do aluno(a) ${student.name} é ${average}.
+Não foi dessa vez, ${student.name}! Tente novamente` 
+      }      
+    }
+
+    for(index = 0; index < students.length; index++){
+      alert(average(students[index]))
+    }
+  </script>
+</body>
+</html>
